@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tuionf.swipeview.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="我滚" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/start_scrollby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="scrollBy" />
+
+    <Button
+        android:id="@+id/start_scrollto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="scrollTO" />
+
+    <com.example.tuionf.swipeview.SwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cccccc">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </com.example.tuionf.swipeview.SwipeMenuLayout>
+
+    <!--<com.example.tuionf.swipeview.SwipeView-->
+        <!--android:id="@+id/es"-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:contentView="@+id/content"-->
+        <!--app:leftView="@+id/left"-->
+        <!--app:rightView="@+id/right">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/left"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@android:color/holo_blue_dark"-->
+
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="20dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+
+                <!--android:layout_height="wrap_content"-->
+                <!--android:clickable="true"-->
+                <!--android:text="分享" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#cccccc"-->
+            <!--android:orientation="vertical"-->
+            <!--android:padding="20dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="内容区域" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/right"-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@android:color/holo_red_light"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@android:color/holo_blue_bright"-->
+                <!--android:clickable="true"-->
+                <!--android:padding="20dp"-->
+                <!--android:text="删除" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/right_menu_2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@android:color/holo_orange_dark"-->
+                <!--android:clickable="true"-->
+                <!--android:padding="20dp"-->
+                <!--android:text="收藏" />-->
+
+        <!--</LinearLayout>-->
+    <!--</com.example.tuionf.swipeview.SwipeView>-->
+
+</LinearLayout>
